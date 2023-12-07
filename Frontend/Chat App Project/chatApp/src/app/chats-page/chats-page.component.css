@@ -1,0 +1,372 @@
+/*Desktop Design*/
+/*---------------------------------------------------------------------------------*/
+
+/* PAGE STYLING*/
+.container-fluid {
+  height: 100vh;
+  background-image: url(https://i.pinimg.com/originals/b6/16/fa/b616fabcf835d18400a6da4b7ed1989e.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*---------------------------------------------------------------------------------*/
+
+/* COLUMN SIZZING*/
+.col-6 {
+  height: 65vh;
+}
+.col-3 {
+  height: 75vh;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  background-color: #123659;
+}
+.col-sm-12-i {
+  position: relative;
+  top: 80%;
+  border-radius: 20px;
+}
+.col-sm-12 {
+  height: 82%;
+  background-color: #18497a;
+}
+.list-group {
+  height: 64vh;
+}
+.col-sm-12 label {
+  font-size: large;
+  color: white;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/* ROW SIZZING*/
+
+.row-1 {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+}
+.row {
+  background-color: #d6e6f7;
+}
+
+.top-footer {
+  background-color: #0f2c49;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* FORM SIZING AND SPACING*/
+.form-1 {
+  position: relative;
+}
+.form-1 .fa-search {
+  position: absolute;
+
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form-1 input {
+  height: 60%;
+  text-indent: 33px;
+  border-radius: 10px;
+}
+
+.form-1 input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* NAV SIZING AND SPACING*/
+
+.navbar {
+  background-color: #123659;
+}
+.nav-item {
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus .navbar-toggler {
+  outline: none;
+  box-shadow: none;
+}
+.offcanvas-ul ul li:hover {
+  background-color: #123659;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+.offcanvas-ul .fa {
+  color: #081828;
+}
+
+.nav-link-2 {
+  position: relative;
+  border: none;
+  color: white;
+  background-color: #123659;
+  font-size: large;
+}
+.nav-link-2:hover {
+  top: 1em;
+  background-color: #123659;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+}
+.nav {
+  position: relative;
+  background-color: #123659;
+  height: 20%;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/* LIST SIZING AND SPACING*/
+
+.left-list {
+  color: white;
+  font-size: medium;
+  list-style-type: none;
+}
+
+.list-1 a {
+  font-size: large;
+  color: white;
+}
+.list-1 i {
+  color: #1f5d9b;
+}
+.info p {
+  color: #a5c9ed;
+}
+.list-group {
+  position: relative;
+  height: 90%;
+  margin-bottom: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.list-group a {
+  color: white;
+  text-align: center;
+}
+
+.list-group-item {
+  background-color: #18497a;
+  border: none;
+  padding-top: 2vh;
+}
+
+.list-group-item-action:hover {
+  background-color: #081828;
+  border-radius: 10px;
+}
+
+
+
+
+/*---------------------------------------------------------------------------------*/
+
+/* UTILITY SIZING AND SPACING*/
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 200px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #18497a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #123659;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: white;
+}
+
+.fa-ellipsis-v {
+  outline: none;
+  box-shadow: none;
+}
+
+
+.textArea {
+  border: none;
+  font-weight: 100px;
+  width: 100%;
+  height: 10%;
+  border: none;
+  overflow: auto;
+  outline: none;
+
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+  resize: none; /*remove the resize handle on the bottom right*/
+}
+
+
+.Add i {
+  color: #f5527b;
+}
+.Add h5 {
+  color: #081828;
+  font-weight: 100px;
+}
+.status {
+  position: absolute;
+  width: 20px;
+}
+
+.position {
+  display: flex;
+  flex-direction: column;
+}
+.fa-pencil-1 {
+  position: absolute;
+  bottom: 10px;
+}
+.pencil-2 {
+  position: absolute;
+  left: 70px;
+  top: 65px;
+}
+.offcanvas-ul ul {
+  list-style: none;
+}
+
+.modal-body,
+.modal-footer {
+  background-color: #a5c9ed;
+}
+.modal-header {
+  background-color: #123659;
+  color: white;
+}
+.fa-bell {
+  position: absolute;
+  width: 50px;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*mobeile */
+.hr .new1 {
+  border-right: 5px;
+  border-color: #9ca3af;
+}
+
+.footer {
+  height: 52vw;
+  background-color: #081828;
+  position: relative;
+  top: 80px;
+}
+.btn-close {
+  color: #f5527b;
+}
+.pencil-4 {
+  position: relative;
+  top: 2em;
+  left: 1em;
+}
+.container-mobile {
+  height: 84vh;
+  background-color: white;
+}
+
+.hr.new-2 {
+  border-color: black;
+  margin: 20px;
+}
+.chat-list {
+  position: relative;
+  height: calc(100% - 290px); /*60 + 50  */
+  overflow-y: auto;
+}
+
+.chat-list .block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.chat-list .block:hover {
+  background: #ebebeb;
+}
+
+.chat-list .block .imgbx {
+  position: relative;
+  min-width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.chat-list .block .user-details {
+  position: relative;
+  width: 100%;
+}
+.chat-list .block .user-details .name-msgTime {
+  display: flex;
+  justify-content: space-between;
+}
+.chat-list .block .user-details .name-msgTime h4 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #111;
+}
+.chat-list .block .user-details .name-msgTime .time {
+  font-size: 0.75em;
+  color: #aaa;
+}
+.chat-list .block.unread .user-details .name-msgTime .time {
+  color: #06d755;
+}
+.chat-list .block .user-details .details h4 {
+  font-size: 5px;
+  font-weight: 600;
+  color: #111;
+}
+.btn-2 {
+  position: -webkit-sticky;
+  top: 90%;
+  left: 80%;
+  width: 10em;
+
+  border-radius: 500px;
+}
+.container-mobile::-webkit-scrollbar {
+  display: none;
+}

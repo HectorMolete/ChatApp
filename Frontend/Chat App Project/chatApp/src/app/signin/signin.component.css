@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+.container-fluid{
+    background-image: url(https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/*------------ Login container ------------*/
+
+.box-area{
+    width: 930px;
+}
+
+/*------------ Right box ------------*/
+
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+.row{
+   color: #808080;
+}
+.invalid-feedback{
+
+    border-top-right-radius: 50px;
+    color: #dc3545; /* Error text color */
+    font-size: 14px;
+}
+
+/*------------ Custom Placeholder ------------*/
+
+
+::placeholder{
+    font-size: 16px;
+}
+/*------------placeholder radius---------*/
+.form-control{
+    border-radius: 50px;
+}
+.btn{
+    border-radius: 50px;
+}
+
+.rounded-4{
+    border-radius: 20px;
+    background-image: url(https://i.pinimg.com/originals/b6/16/fa/b616fabcf835d18400a6da4b7ed1989e.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+.input-group{
+    border-radius: 70px;
+}
+
+
+/*------------ For small screens------------*/
+
+@media only screen and (max-width: 768px){
+
+     .box-area{
+        margin: 0 10px;
+
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+
+}

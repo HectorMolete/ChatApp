@@ -1,0 +1,83 @@
+<!----------------------- Main Container -------------------------->
+
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100">
+
+    <!----------------------- Signin Container -------------------------->
+
+    <div class="row vh-50 border rounded-5 p-3 bg-light shadow box-area">
+
+        <!--------------------------- Left Box ----------------------------->
+
+        <div
+            class="col-md-6 rounded-4 d-flex d-none d-lg-flex justify-content-center align-items-center flex-column left-box">
+            <div class="featured-image mb-3 d-flex">
+                <img src="/assets/O-initial-digital-logo-on-transparent-background-PNG.png" class="img-fluid"
+                    style="width: 50px;">
+                <h4 class="ms-1 mt-3" style="color:black">Lets<span style="color:#F5527B">Chat</span></h4>
+            </div>
+            <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">
+                Welcome!!</p>
+            <small class="text-white text-wrap text-center"
+                style="width: 17rem;font-family: 'Courier New', Courier, monospace;">To keep conected with us please
+                <br>login with your personal info.</small>
+        </div>
+
+        <!-------------------- ------ Right Box ---------------------------->
+
+        <div class="col-md-6 right-box">
+            <div class="row align-items-center">
+                <div class="header-text mb-4" style="color:black">
+                    <h2>Create Account</h2>
+                </div>
+
+                <form [formGroup]="register" (ngSubmit)="onSubmit()" novalidate>
+                    <div class="input-group mb-3">           
+                        <input formControlName="username" [ngClass]="{'is-invalid': submitted && f['username'].errors}" type="text" class="form-control form-control-lg bg-light fs-6" placeholder="User name" >                    
+                        <div *ngIf="submitted && f['username'].errors" class="invalid-feedback">
+                        <div *ngIf="f['username'].errors['required']"> First name is required</div>
+                        <div *ngIf="f['username'].errors['minlength']"> must have atleast more than 4 letters</div>
+                        <div *ngIf="f['username'].errors['pattern']"> please insert a valid name </div>       
+                         </div>                  
+                    </div>
+                    <div class="input-group mb-3">
+                        <input  formControlName="contact" [ngClass]="{'is-invalid': submitted && f['contact'].errors}" type="contact" class="form-control form-control-lg bg-light fs-6" placeholder="Contact">
+                        <div *ngIf="submitted && f['contact'].errors" class="invalid-feedback">
+                        <div *ngIf="f['contact'].errors['notZero']"> Contact must start with zero </div>
+                        <div *ngIf="f['contact'].errors['required']"> Contacts required </div>
+                        <div *ngIf="f['contact'].errors['pattern']"> Please insert a valid phonenumber </div> 
+                        <div *ngIf="f['contact'].errors['minlength']"> Minimum numbers required is 10 </div>  
+                        <div *ngIf="f['contact'].errors['maxlength']"> Max numbers required is 10 </div>           
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input formControlName="password" [ngClass] = "{'is-invalid': submitted && f['password'].errors}" type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Password">
+                        <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                            <div *ngIf="f['password'].errors['required']">Enter password</div>
+                            <div *ngIf="f['password'].errors['noMatch']">Password doesn't match</div>
+                            <div *ngIf="f['password'].errors['maxlength']">Password must not exceed 30 charecters</div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <input formControlName="confirmPassword" [ngClass] = "{'is-invalid': submitted && f['confirmPassword'].errors} " type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password">
+                        <div *ngIf="submitted && f['confirmPassword'].errors" class="invalid-feedback">
+                            <div *ngIf="f['confirmPassword'].errors['required']">Enter password</div>
+                            <div *ngIf="f['confirmPassword'].errors['noMatch']">Password doesnt match</div>
+                            <div *ngIf="f['confirmPassword'].errors['maxlength']">Password must not exceed 30 charecters</div>
+                        </div>
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg  w-100 fs-50"
+                            style="background-color: #F5527B; color: white;">Signin</button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <p>Already have an account? <a href="#" style="color:#be2ed6; font-weight: bold;" class="text-decoration-none fs-25" routerLink="../log-in"> Login</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
